@@ -11,17 +11,57 @@
       font-size: 30px;
     }
     #title{
-  font-size: 150px;
+  font-size: 200px;
   font-weight: strong;
-  text-align: top;
+  text-align: center;
     }
     
     #begger {
-    border: solid black;
-    border-width: 20px;
+    border:20px solid black;
     border-radius: 200px;
-    text-align: top;
+    text-align: center;
+    line-height: 15px;
       }
+    #name-label {
+      padding: 20px;
+      background-color: green;
+    }
+    #name{
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      font-size: 20px;
+      align: center;
+    }
+    #email-label {
+      padding: 20px;
+      background-color: grey;
+    }
+    #email {
+      width: 203px;
+      height; 40px;
+      text-align: center;
+      font-size: 20px;
+      align: center;
+    }
+    #number-label {
+      padding: 15px;
+      background-color: blue;
+    }
+    #number {
+      width: 125px;
+      height; 40px;
+      text-align: center;
+      font-size: 20px;
+      align: center;
+    }
+    #mood {
+      max-width: 500px;
+      max-height: 200px;
+      width: 200px;
+      height: 50px;
+    }
+
   </style>
   
   <div id="begger">
@@ -29,25 +69,30 @@
  <p id="description"> I want to find out more about you, so please tell me thanks! </p>
   </div>
 <form id="survey-form">
-  <h2> Basic information </h2>
+  <h2><u>Basic information</u> </h2>
   <div>
-    <label id="name-label" placeholder="name">*Name
+    <label id="name-label" placeholder="name">*Name:
     <input id="name" type="text" placeholder="Name" required></label>
   </div>
   
+  <br>
+  
   <div>
-    <label id="email-label" placeholder="email">*Email
+    <label id="email-label" placeholder="email">*Email:
     <input id="email" type="email" required placeholder="Email"></label>
     </div>
+  
+  <br>
+  
   <div>
     
-    <label id="number-label" placeholder="Age">*Age
+    <label id="number-label" placeholder="Age">*Age:
    <input id="number" type="number" placeholder="Age" required min="0" max="150"> </label>
     </div>
   <h2> Whats your mood like on average? </h3>
     <div>
-    <dropdown id="dropdown">
-      <select>
+    <dropdown id="dropdown" >
+      <select id="mood">
         <option selected disabled value> Select your mood </option>
         <option> Happy </option>
         <option> Sad </option>
