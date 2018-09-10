@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+  
+  <style>
+    body {
+      background-color: rgb(250, 110, 10);
+      font-family: Lobster;
+      text-align: center;
+      font-size: 30px;
+    }
+    #title{
+  font-size: 150px;
+  font-weight: strong;
+  text-align: top;
+    }
+    
+    #begger {
+    border: solid black;
+    border-width: 20px;
+    border-radius: 200px;
+    text-align: top;
+      }
+  </style>
+  
+  <div id="begger">
+    <h1 id="title"><u>Survey Form</u> </h1>
+ <p id="description"> I want to find out more about you, so please tell me thanks! </p>
+  </div>
+<form id="survey-form">
+  <h2> Basic information </h2>
+  <div>
+    <label id="name-label" placeholder="name">*Name
+    <input id="name" type="text" placeholder="Name" required></label>
+  </div>
+  
+  <div>
+    <label id="email-label" placeholder="email">*Email
+    <input id="email" type="email" required placeholder="Email"></label>
+    </div>
+  <div>
+    
+    <label id="number-label" placeholder="Age">*Age
+   <input id="number" type="number" placeholder="Age" required min="0" max="150"> </label>
+    </div>
+  <h2> Whats your mood like on average? </h3>
+    <div>
+    <dropdown id="dropdown">
+      <select>
+        <option selected disabled value> Select your mood </option>
+        <option> Happy </option>
+        <option> Sad </option>
+        <option> Neutral </option>
+        <option> I love dogs </option>
+      </select>
+    </dropdown>
+    </div>
+  <h2> What is your favorite thing from this list? </h2>
+    <div>
+      <label for="dogs"><input id="dogs" type="radio" name="name" value="dogs">Dogs </label>
+      <label for="panda express"><input id="panda express" type="radio" name="name" value="panda express"> Panda express </label>
+       <label for="chipotle">
+         <input id="chipotle" type="radio" name="name" value="chipotle"> Chipotle </label>
+        <label for="authentic mexican"> 
+    <input id="authentic mexican" type="radio" name="name" value="authentic mexican"> Authentic Mexican </label>
+    </div>
+  <h2> What is your dads name? </h2>
+  <div>
+    <ul id="dads name">
+      <li class="checkbox"><label><input name="Jack" value=jack type="checkbox"> Jack </label></li>
+      <li class="checkbox"><label><input name="Erick" value=Erick type="checkbox"> Erick </label></li>
+      <li class="checkbox"><label><input name="Other" value=Other type="checkbox"> Other </label> </li>
+    </ul>
+  </div>
+  <h2>Tell me how fun of a survey this was :D</h2>
+    <div>
+      <textarea>
+OR tell us anything else about you, that you want us to know!
+      </textarea>
+    </div>
+    <button id="submit"> Submit all answers </button>
+  </form>
